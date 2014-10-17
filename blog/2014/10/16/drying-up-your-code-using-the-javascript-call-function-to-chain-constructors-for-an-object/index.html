@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>My Octopress Blog</title>
+  <title>DRYing Up Your Code: Using the JavaScript Call Function to Chain Constructors for an Object - My Octopress Blog</title>
   <meta name="author" content="Bill Fienberg">
 
   
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://billfienberg.github.io">
+  <link rel="canonical" href="http://billfienberg.github.io/blog/2014/10/16/drying-up-your-code-using-the-javascript-call-function-to-chain-constructors-for-an-object">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
@@ -63,15 +63,12 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2014/10/16/drying-up-your-code-using-the-javascript-call-function-to-chain-constructors-for-an-object/">DRYing Up Your Code: Using the JavaScript Call Function to Chain Constructors for an Object</a></h1>
+      <h1 class="entry-title">DRYing Up Your Code: Using the JavaScript Call Function to Chain Constructors for an Object</h1>
     
     
       <p class="meta">
@@ -87,7 +84,7 @@
   </header>
 
 
-  <div class="entry-content"><p>I wasn&rsquo;t satisfied with my understanding of JavaScript&rsquo;s <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call">call()</a> function. So I dug through the docs and expanded upon one of the examples.</p>
+<div class="entry-content"><p>I wasn&rsquo;t satisfied with my understanding of JavaScript&rsquo;s <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call">call()</a> function. So I dug through the docs and expanded upon one of the examples.</p>
 
 <p>Below is a Product constructor with one property (price) that is used as the prototype for the Food and Toy function, but <strong>does not use the call() function</strong>.</p>
 
@@ -554,18 +551,44 @@ By not using call(), it&rsquo;s clear to see that the code becomes less DRY as t
 
 <p>If you found this blog helpful, please follow <a href="https://twitter.com/BillFienberg">@BillFienberg</a> on Twitter.</p>
 </div>
-  
-  
 
 
-    </article>
+  <footer>
+    <p class="meta">
+      
   
-  <div class="pagination">
+
+<span class="byline author vcard">Posted by <span class="fn">Bill Fienberg</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2014-10-16T02:15:19-05:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>16</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>2:15 am</span></time>
+      
+
+
+    </p>
     
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://billfienberg.github.io/blog/2014/10/16/drying-up-your-code-using-the-javascript-call-function-to-chain-constructors-for-an-object/" data-via="" data-counturl="http://billfienberg.github.io/blog/2014/10/16/drying-up-your-code-using-the-javascript-call-function-to-chain-constructors-for-an-object/" >Tweet</a>
+  
+  
+  
 </div>
+
+    
+    <p class="meta">
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
 <aside class="sidebar">
   
     <section>
@@ -585,6 +608,7 @@ By not using call(), it&rsquo;s clear to see that the code becomes less DRY as t
 
   
 </aside>
+
 
     </div>
   </div>
